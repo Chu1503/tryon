@@ -1,0 +1,3 @@
+# Install this inside the official CatVTON Python 3.9 environment after
+# installing the upstream repository's own requirements.txt.
+huggingface-hub>=0.25,<1

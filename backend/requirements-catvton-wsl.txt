@@ -1,0 +1,23 @@
+# Runtime subset for the official CatVTON SD 1.5 pipeline used by this app.
+# The upstream requirements currently point at an incompatible development
+# diffusers branch; these versions are mutually compatible and keep the same
+# official CatVTON source/model implementation.
+torch==2.4.0
+torchvision==0.19.0
+accelerate==0.31.0
+diffusers==0.31.0
+transformers==4.46.3
+huggingface-hub==0.26.2
+matplotlib==3.9.1
+PyYAML==6.0.1
+scipy==1.13.1
+scikit-image==0.24.0
+tqdm==4.66.4
+fvcore==0.1.5.post20221221
+cloudpickle==3.0.0
+omegaconf==2.3.0
+pycocotools==2.0.8
+av==12.3.0
+# CatVTON bundles a CPython 3.9 Detectron2 binary. For this app's shared
+# Python 3.10 environment, install Detectron2 v0.6 from source separately:
+# python -m pip install --no-build-isolation 'git+https://github.com/facebookresearch/detectron2.git@v0.6'
